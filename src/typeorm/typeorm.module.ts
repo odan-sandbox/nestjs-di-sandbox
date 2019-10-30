@@ -6,9 +6,10 @@ console.log(__dirname + "/../schemas/**/*.js");
 @Module({
   imports: [
     TypeOrmModule.forRoot({
-      type: "sqlite",
+      //      type: "sqlite",
+      type: "mysql",
       database: "todo.sqlite",
-      entities: [__dirname + "/../schemas/**/*.js"],
+      entities: [__dirname + "/../schemas/**/*{.js,.ts}"],
       synchronize: true
     })
   ]

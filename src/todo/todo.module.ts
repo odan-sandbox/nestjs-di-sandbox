@@ -7,7 +7,7 @@ import { TodoService } from "./todo.service";
 import { Todo } from "../schemas/todo.schema";
 
 @Module({
-  imports: [TypeOrmModule.forFeature([Todo])],
+  //imports: [TypeOrmModule.forFeature([Todo])],
   controllers: [TodoController],
   providers: [TodoService]
 })
