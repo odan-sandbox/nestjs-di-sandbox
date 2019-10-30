@@ -18,5 +18,7 @@ module.exports = {
       sourceType: "module"
     },
     rules: {
+      "@typescript-eslint/explicit-function-return-type": "off",
+      "@typescript-eslint/no-parameter-properties": "off"
     }
   }
